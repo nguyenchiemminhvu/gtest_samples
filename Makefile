@@ -1,6 +1,10 @@
-CPP_OBJS = gtest_main.o
+CPP_OBJS = \
+	gtest_main.o \
+	Location.o
 
-CPP_SOURCES = gtest_main.cpp
+CPP_SOURCES = \
+	gtest_main.cpp \
+	classes/Location.cpp
 
 CPP_FLAGS = \
 	-g \
@@ -8,7 +12,8 @@ CPP_FLAGS = \
 	-Wextra \
 	-lgtest \
 	-lgtest_main \
-	-pthread
+	-pthread \
+	-I/classes
 
 CPP_LDFLAGS = \
 	-lgtest \
